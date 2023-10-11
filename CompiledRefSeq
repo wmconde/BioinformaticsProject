@@ -1,0 +1,8 @@
+
+#This for loop aims to compile all the reference sequences for hsp70gene into a single file
+for refseq in hsp70gene*
+do
+  cat $refseq | grep -v ">" >> hsp70geneCompile.fasta
+done
+
+#

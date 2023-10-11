@@ -5,4 +5,8 @@ do
   cat $refseq | grep -v ">" >> hsp70geneCompile.fasta
 done
 
-#
+#This for loop aims to compile all the reference sequences for mcrAgene into a single file 
+for refseq2 in mcrAgene*
+do
+  cat $refseq2 | grep -v ">" >> mcrAgeneCompile.fasta
+done

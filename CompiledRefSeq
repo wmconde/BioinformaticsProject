@@ -14,3 +14,7 @@ done
 #These compiled files then are aligned by muscle for analysis
 muscle -align hsp70geneCompile.fasta -output aligned_hsp70gene.fasta
 muscle -align combined_McrA.fasta -output aligned_mcrA.fasta
+
+#This creates a hmm using hmmbuild tool
+hmmbuild hsp70geneCompile.hmm aligned_hsp70gene.fasta
+hmmbuild mcrAgeneCompile.hmm aligned_mcrAgene.fasta
